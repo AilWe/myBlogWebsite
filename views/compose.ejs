@@ -1,0 +1,15 @@
+<%- include("partial/header") -%>
+<h1>Compose</h1>
+<form action="/compose" method="post">
+    <div class="form-group">
+        <label>Title</label>
+        <input class="form-control" type="text" name="newPostTitle">
+         <label>Post</label>
+        <textarea class="form-control" name="newComposeContent" id="" cols="30" rows="10"></textarea>
+        <p>Please do not leave Blog title or Blog Post empty. If it is empty, it will direct you to home page.</p>
+    </div>
+
+
+    <button class="btn btn-primary" type="submit"> Publish </button>
+</form>
+<%- include("partial/footer") -%>
